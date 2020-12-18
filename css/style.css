@@ -467,22 +467,18 @@ h4 {
   display: flex;
 }
 
-.sm a {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.sm a:hover,
-.sm a:focus,
-.sm a:active {
+.sm .sm-link:hover,
+.sm .sm-link:focus,
+.sm .sm-link:active {
   background-color: var(--icons-contrast-color);
+  color: var(--main-background-color);
 }
 
-.sm-item:last-child {
+.sm-item .sm-link:last-child {
   margin-right: 0;
 }
 
-.sm-item a {
+.sm-item .sm-link {
   display: flex;
   height: 44px;
   width: 44px;
@@ -492,14 +488,14 @@ h4 {
   color: var(--icons-primary-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 1150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sm-item a:hover,
+/*.sm-item a:hover,
 .sm-item a:focus,
 .sm-item a:active {
-  color: var(--main-background-color);
-}
+  
+}*/
 
 .sm-icon {
   height: 20px;
@@ -509,7 +505,7 @@ h4 {
   fill: currentColor;
 }
 
-footer .sm-item a {
+footer .sm-item .sm-link {
   height: 44px;
   width: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -621,7 +617,7 @@ footer .sm-item {
   margin-right: 0;
 }
 
-.currents-link {
+.clients-link {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
